@@ -92,7 +92,7 @@ The *Point* object is a two dimensional point implementation.
  * `point.y` - the y coordinate of a point
 
 ### Point functions
- * `point.offset(x, y)` - moves the point x units to the right and y units down
+ * `point.offset(x, y)` - returns new point that is moved x units to the right and y units down 
  * `point.distance(otherPoint)` - calculates the Euclidean distance from point to *otherPoint*
 
 ```javascript
@@ -100,7 +100,7 @@ The *Point* object is a two dimensional point implementation.
 var point = new Point(100, 100);
 
 // Move the point 100 pixels to the right and 50 pixels up
-point.offset(100, -50);
+var newPoint = point.offset(100, -50);
 
 // Calculate the distance from point to center
 var distance = point.distanceTo(canvas.center());

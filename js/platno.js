@@ -177,8 +177,7 @@ class Point {
 	}
 
 	offset(x, y) {
-		this.x += x;
-		this.y += y;
+		return new Point(this.x + x, this.y + y);
 	}
 
 }
